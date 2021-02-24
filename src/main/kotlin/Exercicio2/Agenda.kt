@@ -3,69 +3,73 @@ package Exercicio2
 
 
 
-data class Agenda(var nomeAgenda: String) {
-
-
-    var listaDeContatos : MutableMap<String, Int> = mutableMapOf("" to  0)
+data class Agenda(var listaDeContatos : MutableMap<String, Int>) {
 
 
 
-    fun SalvarContato(nomeContato:String, telefoneContato:Int):Any {
+
+
+
+    fun SalvarContato(nomeContato:String, telefoneContato:Int):MutableMap<String,Int> {
 
 
         var tamanho: Int = listaDeContatos.size
 
         if (listaDeContatos.containsKey(nomeContato) && listaDeContatos.containsValue(telefoneContato)) {
+            println("Esse contato ja existe")
 
-            return "Esse contato já existe"
+
+            return listaDeContatos
 
 
         }else{
-            if(listaDeContatos.containsKey("") && listaDeContatos.containsValue(0)){
-                listaDeContatos.remove("")
 
 
-            }
-
-
-            if (tamanho < 3) {
+            if (tamanho < 10) {
                 listaDeContatos.put(nomeContato,telefoneContato)
-                println("Agenda da $nomeAgenda")
-                return println(listaDeContatos)
+                println("Contato Salvo com sucesso!")
+                return listaDeContatos
 
             } else {
-                return println("Número de contatos excede o limite")
+                println("Numero de contatos excede o limite")
+                return listaDeContatos
             }
 
         }
 
     }
 
-    fun RemoverContato(nomeContato:String, telefoneContato:Int):Any{
+    fun RemoverContato(nomeContato:String, telefoneContato:Int):MutableMap<String,Int>{
 
         return if (listaDeContatos.containsKey(nomeContato) && listaDeContatos.containsValue(telefoneContato)) {
             listaDeContatos.remove(nomeContato,telefoneContato)
+            println("Contato Removido com Sucesso")
             println(listaDeContatos)
+            listaDeContatos
 
         } else{
-            "Esse contato não existe"
+            println("Esse contato nao existe")
+            listaDeContatos
         }
 
     }
 
-    fun BuscarContato(nomeContato:String):Any{
+    fun BuscarContato(nomeContato:String):MutableMap<String, Int>{
 
         return if(listaDeContatos.contains(nomeContato)){
-            " $nomeContato : ${listaDeContatos[nomeContato]}"
+           println( " $nomeContato : ${listaDeContatos[nomeContato]}")
+            listaDeContatos
         } else {
-            "Não existe esse contato cadastrado"
+            println("Nao existe esse contato cadastrado")
+            listaDeContatos
         }
 
 
     }
 
-    fun MostrarAgenda() {
-        return println(listaDeContatos)
+    fun MostrarAgenda():MutableMap<String,Int> {
+        println(listaDeContatos)
+        return listaDeContatos
     }
 
 

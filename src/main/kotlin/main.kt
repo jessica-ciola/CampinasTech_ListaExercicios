@@ -1,40 +1,60 @@
 import Exercicio1.Pessoa
+import Exercicio3.SalvarContatoRh
 import Exercicio2.*
-//import Exercicio2.Salvar
-import java.time.LocalDate
-//import Exercicio2.Contatos
+
+
+
 
 fun main() {
+    // ----------------Exercicio 1 -------------------------
 
-//  var Jessica = Pessoa(nome = "Ana", dataNascimento = "19-09-1991", altura = 1.68)
-//
-//    println(Jessica.getInfo())
-//
-//  var Sandro = Pessoa(nome = "Sandro", dataNascimento = "04-07-1989", altura = 1.70)
-//
-//  println(Sandro.getInfo())
+    //  var Jessica = Pessoa(nome = "Ana", dataNascimento = "19-09-1991", altura = 1.68)
+    //
+    //    println(Jessica.getInfo())
+    //
+    //  var Sandro = Pessoa(nome = "Sandro", dataNascimento = "04-07-1989", altura = 1.70)
+    //
+    //  println(Sandro.getInfo())
+    //---------------------------------------------------------------------------------------
 
-//  var Jessica = Salvar(nomeContatoSalvar = "Jessica", telefone = 1899999999)
-//  var Sandro = Salvar(nomeContatoSalvar = "Sandro", telefone = 1899999999)
-//
-//
-//
-//  println(Jessica.listaDeContatos())
-//  println(Sandro.listaDeContatos())
+    // --------------------Exercicio 2 sem uso de classe --------------------------
 
-//  Agenda("Jéssica")
-//  SalvarContato(nomeContato = "Jessica",telefoneContato = 1899993999)
-//  SalvarContato(nomeContato = "Sandro",telefoneContato = 1899993999)
-//  SalvarContato(nomeContato = "Adriano",telefoneContato = 1899993999)
-//  SalvarContato(nomeContato = "Patty",telefoneContato = 1899993999)
-//  SalvarContato(nomeContato = "Patty",telefoneContato = 1899993999)
+//    var minhaAgenda: MutableMap<String, Int> = mutableMapOf()
 //
-//  RemoverContato(nomeContato = "Adriano",telefoneContato = 1899993999)
+//    minhaAgenda = SalvarContato(nomeContato = "Jessica", telefoneContato = 18565)
+//    minhaAgenda = SalvarContato(nomeContato = "Jessica", telefoneContato = 18565)
+//    minhaAgenda = SalvarContato(nomeContato = "Paola", telefoneContato = 18565)
+//    minhaAgenda = SalvarContato(nomeContato = "Joao", telefoneContato = 18565)
+//    minhaAgenda = SalvarContato(nomeContato = "Carlos", telefoneContato = 18565)
+//    minhaAgenda = RemoverContato(nomeContato = "Jessica", telefoneContato = 18565)
+//    minhaAgenda = SalvarContato(nomeContato = "Joao", telefoneContato = 19842)
+//    minhaAgenda = BuscarContato(nomeContato = "Joao")
+//    minhaAgenda = BuscarContato(nomeContato = "Alicia")
+//    minhaAgenda = MostrarAgenda()
+
+    // -----------------------------------------------------------------------------
+
+
+    // -------------Exercicio 2 Com uso de classe ---------------
+//    var minhaAgenda: MutableMap<String, Int> = mutableMapOf()
 //
-//  BuscarContato("Jessica")
-//
-//  MostrarAgenda()
+//    minhaAgenda = Agenda(minhaAgenda).SalvarContato(nomeContato = "Jeh", telefoneContato = 1234)
+//    minhaAgenda =Agenda(minhaAgenda).SalvarContato(nomeContato = "Seh", telefoneContato = 1234)
+//    minhaAgenda = Agenda(minhaAgenda).SalvarContato(nomeContato = "Seh", telefoneContato = 1234)
+//    minhaAgenda = Agenda(minhaAgenda).SalvarContato(nomeContato = "Lari", telefoneContato = 1234)
+//    minhaAgenda = Agenda(minhaAgenda).SalvarContato(nomeContato = "Roberto", telefoneContato = 1234)
+//    minhaAgenda = Agenda(minhaAgenda).RemoverContato(nomeContato = "Lari", telefoneContato = 1234)
+//    minhaAgenda = Agenda(minhaAgenda).BuscarContato(nomeContato = "Lari")
+//    minhaAgenda = Agenda(minhaAgenda).BuscarContato(nomeContato = "Roberto")
+//    minhaAgenda = Agenda(minhaAgenda).MostrarAgenda()
+
+//----------------------------------------------------------------------------------------------
+
+    
+
 
 }
+
+
 
 
