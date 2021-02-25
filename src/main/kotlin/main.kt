@@ -1,8 +1,6 @@
 import Exercicio1.Pessoa
-import Exercicio3.SalvarContatoRh
 import Exercicio2.*
-
-
+import Exercicio3.Rh
 
 
 fun main() {
@@ -50,7 +48,21 @@ fun main() {
 
 //----------------------------------------------------------------------------------------------
 
-    
+
+// -------------Exercicio 3 Com uso de classe e interface ---------------
+//
+//    var meusFuncionarios: MutableMap<Int, MutableList<Any>> = mutableMapOf()
+//
+//    meusFuncionarios = Rh(meusFuncionarios).salvar(id = 1234,nomeContato = "Jessica",cpf = "3697-64d-479",salario = 4500.00)
+//    meusFuncionarios = Rh(meusFuncionarios).salvar(id = 282,nomeContato = "Sandro",cpf = "3697-64d-479",salario = 4500.00)
+//    meusFuncionarios = Rh(meusFuncionarios).salvar(id = 1234,nomeContato = "Jessica",cpf = "3697-64d-479",salario = 4500.00)
+//    meusFuncionarios = Rh(meusFuncionarios).MostrarFuncionarios()
+//    meusFuncionarios = Rh(meusFuncionarios).BuscarFuncionario(1234)
+//    meusFuncionarios = Rh(meusFuncionarios).MostrarFuncionarios()
+
+
+
+
 
 
 }

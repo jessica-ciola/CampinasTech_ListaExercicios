@@ -14,7 +14,7 @@ data class Agenda(var listaDeContatos : MutableMap<String, Int>) {
 
 
         var tamanho: Int = listaDeContatos.size
-
+            //Verifica se o contato já existe
         if (listaDeContatos.containsKey(nomeContato) && listaDeContatos.containsValue(telefoneContato)) {
             println("Esse contato ja existe")
 
@@ -24,7 +24,7 @@ data class Agenda(var listaDeContatos : MutableMap<String, Int>) {
 
         }else{
 
-
+            //Verifica se a agenda tem + de 10 contatos
             if (tamanho < 10) {
                 listaDeContatos.put(nomeContato,telefoneContato)
                 println("Contato Salvo com sucesso!")
@@ -57,7 +57,7 @@ data class Agenda(var listaDeContatos : MutableMap<String, Int>) {
     fun BuscarContato(nomeContato:String):MutableMap<String, Int>{
 
         return if(listaDeContatos.contains(nomeContato)){
-           println( " $nomeContato : ${listaDeContatos[nomeContato]}")
+           println( " $nomeContato : ${listaDeContatos[nomeContato]}") //Printa a chave e valor
             listaDeContatos
         } else {
             println("Nao existe esse contato cadastrado")
